@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ejercicio6();
+        ejercicio8();
     }
 
     public static void ejercicio1() {
@@ -58,5 +58,19 @@ public class Main {
         } else {
             System.out.println("No está en la lista");
         }
+    }
+
+    public static void ejercicio7() {
+        int[][] miMatriz = {{4, 9}, {8, 2}};
+        System.out.println(miMatriz[0][0]);
+        System.out.println(miMatriz[0][1]);
+        System.out.println(miMatriz[1][0]);
+        System.out.println(miMatriz[1][1]);
+    }
+
+    public static void ejercicio8() {
+        int[][] miMatriz = {{4, 9, 7}, {8, 2, 5}};
+        double media = (double) (miMatriz[0][0] + miMatriz[0][1] + miMatriz[0][2] + miMatriz[1][0] + miMatriz[1][1] + miMatriz[1][2]) / 6;
+        System.out.println(media);
     }
 }
